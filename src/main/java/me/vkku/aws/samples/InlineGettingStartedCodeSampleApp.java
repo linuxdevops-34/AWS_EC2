@@ -108,8 +108,8 @@ public class InlineGettingStartedCodeSampleApp {
         // and the latest Amazon Linux AMI id available. Note, you should always use the latest
         // Amazon Linux AMI id or another of your choosing.
         LaunchSpecification launchSpecification = new LaunchSpecification();
-        launchSpecification.setImageId("ami-8c1fece5");
-        launchSpecification.setInstanceType("t1.micro");
+        launchSpecification.setImageId("ami-01e24be29428c15b2");
+        launchSpecification.setInstanceType("t2.micro");
 
         // Add the security group to the request.
         ArrayList<String> securityGroups = new ArrayList<String>();
