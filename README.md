@@ -65,3 +65,23 @@ xvda    202:0    0    8G  0 disk
 └─xvda1 202:1    0    8G  0 part /
 xvdf    202:80   0  100G  0 disk
 ```
+```
+#TL;DR
+history
+    1  clear
+    2  lsblk
+    3  file -s /dev/xvdf
+    4  mkfs -t ext4 /dev/xvdf
+    5  file -s /dev/xvdf
+    6  cd /
+    7  mkdir filesystem
+    8  mount /dev/xvdf /filesystem
+    9  lsblk
+   10  cd filesystem/
+   11  echo "Shiny FileSystem" > vol.txt
+   12  ls
+   13  cat vol.txt
+   14  cd /
+   15  umount /dev/xvdf
+   16  lsblk
+```
