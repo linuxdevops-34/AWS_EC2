@@ -69,7 +69,6 @@ xvdf    202:80   0  100G  0 disk
 #### TL;DR
 ```
 history
-    1  clear
     2  lsblk
     3  file -s /dev/xvdf
     4  mkfs -t ext4 /dev/xvdf
